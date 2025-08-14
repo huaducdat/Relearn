@@ -1,0 +1,71 @@
+#input-section {
+  width: 60ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 5ch;
+  border-bottom: 2px solid black;
+}
+
+button {
+  font-weight: bold;
+  border: none;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  padding: 1ch 3ch;
+  border-radius: 1ch;
+}
+button:hover {
+  background-color: black;
+}
+
+@keyframes flash {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
+button.animate {
+  animation: flash 0.3s;
+}
+#input-section div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1ch;
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+}
+#input-section input {
+  min-width: 10ch;
+  flex: 1;
+  padding-top: .3ch;
+  padding-bottom: .3ch;
+  font-size: 1.2rem;
+  border: none;
+  background-color: rgb(218, 218, 218);
+  border-radius: 1ch;
+  outline: none;
+  padding-right: 1ch;
+  padding-left: 1ch;
+}
+#input-section input:focus{
+    outline: 2px solid rgb(0, 140, 255);
+    background-color: white;
+}
+#input-section input::placeholder{
+    text-align: center;
+}
+label {
+  font-weight: bold;
+  width: 5ch;
+}

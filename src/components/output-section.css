@@ -1,0 +1,31 @@
+#output-infor {
+  width: 150ch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#output-infor ul {
+  width: 100%;
+}
+#output-infor li {
+  display: flex;
+  border-bottom: 1px solid black;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1ch;
+  padding-top: 1ch;
+}
+#output-infor li.gray {
+  background-color: rgb(214, 214, 214);
+}
+#output-infor li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    flex: 1;
+}
