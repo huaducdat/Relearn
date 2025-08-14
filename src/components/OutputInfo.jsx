@@ -21,12 +21,20 @@ function OutPutInfo({ userList, removeAction }) {
         {userList.map((user, index) => (
           <li key={index} className={index % 2 ? "" : "gray"}>
             <div>
-              <b>Name:</b> {user.name}
+              <p>
+                <b>Name: </b>
+                {user.name}
+              </p>
             </div>
             <div>
-              <b>Age:</b> {user.age}
+              <p>
+                <b>Age: </b>
+                {user.age}
+              </p>
             </div>
-            <button onClick={() => removeAction(index)}>Remove</button>
+            <div>
+              <button onClick={() => removeAction(index)}>Remove</button>
+            </div>
           </li>
         ))}
       </ul>
